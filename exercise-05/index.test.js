@@ -23,7 +23,6 @@ test("maybe it doesn't :(", () => {
       { id: 1, name: "a" },
       { id: 2, name: "b" },
       { id: 3, name: "c" },
-      { id: 3, name: "d" },
     ],
     [{ id: 1, name: "c" }],
     "id"
@@ -35,5 +34,5 @@ test("maybe it doesn't :(", () => {
   expect(merged[1].id).toBe(2);
   expect(merged[1].name).toBe("b");
   expect(merged[2].id).toBe(3);
-  expect(merged[2].name).toBe("d");
+  expect(merged[2].name).toBe("c");
 });
